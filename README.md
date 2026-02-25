@@ -29,6 +29,23 @@ This is a clean, empty version of the SCNT Perfume Inventory System ready for de
    - Perfume inventory
    - Purchase orders
    - Sales
+  
+Option 2: Using .NET CLI
+
+bash
+# Build the project
+dotnet build
+
+# Run the application
+dotnet run
+
+### Option 3: Publish as Executable
+
+bash
+# Publish as self-contained executable
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
+
+# The executable will be in: bin\Release\net8.0-windows\win-x64\publish\
 
 ## System Requirements
 
@@ -57,3 +74,4 @@ The system automatically saves data to `perfume_inventory_data.json` in the appl
 ## Support
 
 For questions or issues, please refer to the main documentation.
+
